@@ -5,8 +5,21 @@
 
 .top {
       font-family: 'Open Sans', sans-serif;
-      background-color: #020A18;
       padding-bottom: 97px;
+      margin-bottom: 256px;
+}
+
+body {
+      background-color: #08101D;
+      padding-bottom: 300px;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-size: 16px;
+}
+
+ul {
+      list-style: none;
 }
 
 .center {
@@ -116,4 +129,89 @@
       max-width: 1147px;
       width: 100%;
       margin: 0 auto;
+}
+
+.advantages {
+      margin-bottom: 243px;
+}
+
+.advantages-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(362px, 33%));
+      gap: 30px;
+}
+
+.advantages-item {
+      max-width: 362px;
+      width: 100%;
+      background-color: #132035;
+      padding: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      border-radius: 10px;
+}
+
+.advantages-item-list-big {
+      grid-row: span 2;
+      grid-column: span 2;
+}
+
+.advantages-item-big {
+      max-width: 754px;
+      width: 100%;
+      gap: 60px;
+      min-height: 808px;
+}
+
+.advantages-item-big .advantages-item-photo {
+      width: 306px;
+      height: 322px;
+}
+
+.advantages-item-photo {
+      height: 98px;
+      width: 103px;
+      background-image: url('../img/advantages1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+}
+
+.advantages>ul>li:nth-child(2)>div>div {
+      background-image: url('../img/advantages2.png');
+}
+
+.advantages>ul>li:nth-child(3)>div>div {
+      background-image: url('../img/advantages3.png');
+}
+
+.advantages>ul>li:nth-child(4)>div>div {
+      background-image: url('../img/advantages1.png');
+}
+
+.advantages>ul>li:nth-child(5)>div>div {
+      background-image: url('../img/advantages3.png');
+}
+
+.advantages>ul>li:nth-child(6)>div>div {
+      background-image: url('../img/advantages3.png');
+}
+
+.advantages-item-tittle {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 31px;
+      text-align: center;
+      opacity: 0.7;
+}
+
+.advantages-item-text {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      opacity: 0.7;
 }
