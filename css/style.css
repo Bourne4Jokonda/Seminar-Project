@@ -11,7 +11,6 @@
 
 body {
       background-color: #08101D;
-      padding-bottom: 300px;
       color: #fff;
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -221,13 +220,61 @@ ul {
       opacity: 0.7;
 }
 
+.rewiews {
+      outline: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 0 auto 221px auto;
+}
+
+.rewiews-content {
+      max-width: 548px;
+      width: 100%;
+      padding: 14px 0 0 0;
+      text-align: left;
+}
+
+.rewiews-content-tittle {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 52px;
+      margin: 0 0 40px 0;
+}
+
+.rewiews-content-feedback {
+      margin: 0 0 20px 0;
+      font-weight: 600;
+      opacity: 0.7;
+      max-width: 460px;
+      width: 100%;
+}
+
+.rewiews-content-feedback:last-child {
+      margin: 0;
+}
+
+.rewiews-promo {
+      width: 573px;
+      height: 492px;
+}
+
+.rewiews-promo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+}
+
 @media (max-width:1024px) {
       .center {
             max-width: 768px;
       }
-      .top{
+
+      .top {
             padding-bottom: 120px;
       }
+
       .top-content-subtittle {
             font-size: 16px;
             line-height: 26px;
@@ -249,6 +296,10 @@ ul {
             justify-content: center;
       }
 
+      .advantages-item {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) -100%, #0D1422 63%);
+      }
+
       .advantages-item-list-big {
             grid-row: span 1;
             grid-column: span 1;
@@ -268,14 +319,17 @@ ul {
       /* [class|="advantages-item-list"]{
             display: none;
       } */
+      .rewiews {
+            gap: 64px;
+      }
 }
 
 @media (max-width:767px) {
       .top {
             padding-bottom: 108px;
             margin-bottom: 96px;
-        }
-      
+      }
+
       .header {
             padding: 22.5px 0;
       }
@@ -300,9 +354,11 @@ ul {
       .center {
             max-width: 343px;
       }
-      .top-content{
+
+      .top-content {
             margin-bottom: 128px;
       }
+
       .top-content-text {
             text-align: center;
       }
@@ -315,5 +371,30 @@ ul {
             padding: 0px;
             gap: 24px;
 
+      }
+
+      .rewiews {
+            gap: 32px;
+            margin: 0 auto 96px auto;
+      }
+
+      .rewiews-content {
+            text-align: center;
+            padding: 0;
+      }
+
+      .rewiews-content-tittle {
+            font-size: 24px;
+            line-height: 31px;
+            margin: 0 0 16px 0;
+      }
+
+      .rewiews-content-feedback {
+            margin: 0 0 16px 0;
+      }
+
+      .rewiews-promo {
+            width: 342px;
+            height: 294px;
       }
 }
